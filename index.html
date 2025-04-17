@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G H T - التنقل بين مدن الجهة الشرقية</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="G H T Logo">
+        </div>
+        <div class="nav-buttons">
+            <a href="#">تسجيل الدخول</a>
+            <a href="#">فتح حساب</a>
+            <div class="language-selector">
+                <button onclick="setLanguage('ar')">العربية</button>
+                <button onclick="setLanguage('fr')">Fr</button>
+            </div>
+        </div>
+    </header>
+    <section class="intro">
+        <h1>
+            مرحباً في G H T
+            <img src="assets/logo.png" alt="G H T Logo">
+        </h1>
+        <p>تطبيق G H T يسهل التنقل بين مدن الجهة الشرقية بالمغرب عن طريق ربط المسافرين بأصحاب المقاعد الشاغرة.</p>
+    </section>
+    <section class="about">
+        <h2>عن التطبيق</h2>
+        <p>G H T هو تطبيق مبتكر يهدف إلى تسهيل التنقل بين مدن الجهة الشرقية في المغرب، من خلال ربط الأشخاص الذين يحتاجون إلى التنقل مع الآخرين الذين لديهم مقاعد شاغرة. هدفنا هو جعل السفر أسهل وأكثر راحة لجميع المستخدمين مع تقديم خدمة موثوقة وآمنة.</p>
+    </section>
+    <section class="user-reviews">
+        <h2>آراء بعض المستخدمين</h2>
+        <div class="reviews">
+            <p>"تطبيق رائع وسهل الاستخدام!" - أحمد</p>
+            <p>"خدمة ممتازة، سهلت علي التنقل." - فاطمة</p>
+            <p>"كان السفر أكثر راحة بفضل هذا التطبيق." - يوسف</p>
+        </div>
+    </section>
+    <section class="contact">
+        <h2>تواصل معنا</h2>
+        <p>إذا كان لديك أي استفسارات أو ملاحظات، لا تتردد في التواصل معنا.</p>
+        <form>
+            <input type="text" placeholder="اسمك" required>
+            <input type="email" placeholder="بريدك الإلكتروني" required>
+            <textarea placeholder="رسالتك" rows="5" required></textarea>
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+    <section class="download">
+        <h2>تحميل التطبيق</h2>
+        <a href="#">تحميل من Google Play</a>
+        <a href="#">تحميل من App Store</a>
+    </section>
+    <footer>
+        <p>&copy; 2025 G H T. جميع الحقوق محفوظة.</p>
+    </footer>
+    <script>
+        function setLanguage(lang) {
+            if (lang === 'ar') {
+                document.documentElement.lang = 'ar';
+                alert('تم تغيير اللغة إلى العربية');
+            } else if (lang === 'fr') {
+                document.documentElement.lang = 'fr';
+                alert('La langue a été changée en français');
+            }
+        }
+    </script>
+</body>
+</html>
